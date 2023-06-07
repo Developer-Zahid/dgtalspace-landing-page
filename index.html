@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dgtal Space</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.min.css">
+
+    <script src="./assets/plugins/bootstrap/js/bootstrap.min.js" defer></script>
+    <script src="./assets/js/script.js" defer></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="/" class="navbar__brand">
+                <img src="./assets/images/logo/logo.svg" alt="logo" class="navbar__brand__image">
+            </a>
+            <a href="https://dgtalspace.com/" target="_blank" class="btn-text">Visite Main Website</a>
+        </div>
+    </nav>
+    <header class="header">
+        <div class="container">
+            <h1 class="header__title text-center">
+                <span class="header__title__sentence">Creative Web</span>
+                <span class="header__title__sentence">Design & Development Agency</span>
+            </h1>
+            <div class="header__frame">
+                <div class="header__frame__window">
+                    <img src="./assets/images/banner/website-preview.jpg" alt="website preview" loading="lazy" class="header__frame__window__screen">
+                </div>
+            </div>
+        </div>
+        <div class="header__shape">
+            <button data-bs-toggle="modal" data-bs-target="#requestQuoteModal" class="header__btn btn btn-lg btn-primary">
+                Request A Quote <i class="fa-solid fa-angle-right"></i>
+            </button>
+            <svg class="header__shape__element" viewBox="0 0 785 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0.347305L16.3978 4.6273C32.8828 8.90731 65.6783 17.4673 98.3867 15.4343C131.095 13.437 163.716 0.810972 196.424 0.525638C229.133 0.240305 261.928 12.2243 294.637 13.9006C327.345 15.577 359.966 6.87431 392.674 2.73698C425.383 -1.43602 458.178 -1.07936 490.887 5.59031C523.595 12.2243 556.216 25.207 588.924 29.8793C621.633 34.5873 654.428 31.0206 687.137 27.2043C719.845 23.4236 752.466 19.3576 768.689 17.3603L785 15.3273V46.3573H768.689C752.466 46.3573 719.845 46.3573 687.137 46.3573C654.428 46.3573 621.633 46.3573 588.924 46.3573C556.216 46.3573 523.595 46.3573 490.887 46.3573C458.178 46.3573 425.383 46.3573 392.674 46.3573C359.966 46.3573 327.345 46.3573 294.637 46.3573C261.928 46.3573 229.133 46.3573 196.424 46.3573C163.716 46.3573 131.095 46.3573 98.3867 46.3573C65.6783 46.3573 32.8828 46.3573 16.3978 46.3573H0V0.347305Z" fill="white"/>
+            </svg> 
+        </div>
+    </header>
+    <div class="service section-gap">
+        <div class="container">
+            <div class="section-header">
+                <h1 class="section-header__title">
+                    <span class="section-header__title__sentence highlight-word">
+                        <span class="highlight-word__shape">
+                            <img src="./assets/images/shapes/highlight-shape.png" alt="highlight" height="40" loading="lazy" class="highlight-word__shape__image">
+                        </span>
+                        Our services
+                    </span>
+                    <span class="section-header__title__badge">solve any business problem</span>
+                </h1>
+                <p class="section-header__text">Our team has a successful track record of helping brands scale profitably based on high-performing strategies.</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 service__item" style="--index: 0">
+                    <div class="service-card">
+                        <span class="service-card__icon">
+                            <i class="fa-solid fa-code"></i>
+                        </span>
+                        <h3 class="service-card__title">Web Design</h3>
+                        <p class="service-card__text">Weaving Your Business Vision into Engaging Web Design Experiences.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 service__item" style="--index: 1">
+                    <div class="service-card">
+                        <span class="service-card__icon">
+                            <i class="fa-solid fa-database"></i>
+                        </span>
+                        <h3 class="service-card__title">Web Development</h3>
+                        <p class="service-card__text">Empowering Your Digital Growth with Seamless Web Development Solutions.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 service__item" style="--index: 2">
+                    <div class="service-card">
+                        <span class="service-card__icon">
+                            <i class="fa-solid fa-mobile-button"></i>
+                        </span>
+                        <h3 class="service-card__title">App Development</h3>
+                        <p class="service-card__text">Weaving Your Business Vision into Engaging App Development Experiences.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="requestQuoteModal" aria-labelledby="requestQuoteModalLabel" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="requestQuoteModalLabel">Get in touch</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="javascript:void(0)" method="post">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="mb-3">
+                                    <label for="fullName" class="form-label">Full Name <span class="text-danger">*</span></label>
+                                    <input id="fullName" name="fullname" type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="mb-3">
+                                    <label for="mobileNumber" class="form-label">Mobile Number <span class="text-danger">*</span></label>
+                                    <input id="mobileNumber" name="mobile_number" type="number" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="mb-3">
+                                    <label for="emailAddress" class="form-label">Email Address <span class="text-danger">*</span></label>
+                                    <input id="emailAddress" name="email" type="email" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="mb-3">
+                                    <label for="interestedIn" class="form-label">Interested In <span class="text-danger">*</span></label>
+                                    <select id="interestedIn" name="interested_in" class="form-control">
+                                        <option value="" selected disabled>Select</option>
+                                        <option value="Graphic Design">Graphic Design</option>
+                                        <option value="Web Design">Web Design</option>
+                                        <option value="App Design">App Design</option>
+                                        <option value="Other">Other</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="mb-3">
+                                    <label for="briefProject" class="form-label">Brief about the project <span class="text-danger">*</span></label>
+                                    <textarea id="briefProject" name="description" class="form-control" rows="6"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-lg btn-primary">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+</body>
+</html>
