@@ -12,6 +12,11 @@ $font-primary: 'Montserrat', sans-serif;
     outline: 0;
 }
 
+html,
+body
+{
+    overflow-x: hidden;
+}
 
 body{
     --bs-body-font-family: #{$font-primary};
@@ -91,6 +96,10 @@ p{
         &__image{
             display: block;
             max-height: 40px;
+
+            &--white{
+                filter: invert(1);
+            }
         }
     }
 }
@@ -106,12 +115,61 @@ p{
     }
 }
 
+.social-nav{
+    gap: 10px;
+
+    &__link{
+        $size: 40px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: $size;
+        height: $size;
+        border-radius: 50%;
+        color: $color-title;
+        background-color: $color-white;
+        text-decoration: none;
+        transition: all 0.2s ease-in-out;
+
+        &:hover,
+        &:active,
+        &:focus-visible
+        {
+            color: $color-white;
+            background-color: $color-primary;
+        }
+    }
+}
+
+.modal-content{
+    background-color: $color-banner;
+}
+
+.form{
+    &-label{
+        font-weight: 600;
+    }
+
+    &-control,
+    &-select
+    {
+        font-weight: 500;
+        border: 2px solid $color-primary !important;
+        box-shadow: none !important;
+    }
+
+    &-select{
+        cursor: pointer;
+    }
+}
+
 .navbar,
 .header
 {
     background-color: $color-banner;
 }
 
+/* Banner Section */
 .header{
     position: relative;
     padding-top: 30px;
@@ -125,7 +183,9 @@ p{
 
             &:first-child{
                 color: $color-primary;
-                font-size: 60px;
+                @media (min-width: 992px){
+                    font-size: 60px;
+                }
                 font-weight: 700;
             }
         }
@@ -139,7 +199,13 @@ p{
 
     &__frame{
         position: relative;
-        padding-top: 65vh;
+        padding-top: 40vh;
+        @media (min-width: 420px){
+            padding-top: 55vh;
+        }
+        @media (min-width: 768px){
+            padding-top: 65vh;
+        }
         margin-left: auto;
         margin-right: auto;
         transform-style: preserve-3d;
@@ -152,8 +218,14 @@ p{
         }
         
         &__window{
-            transform: translateX(-8%) rotateY(-25deg);
-            inset: 80px;
+            inset: 20px;
+            @media (min-width: 768px){
+                inset: 40px;
+            }
+            @media (min-width: 992px){
+                transform: translateX(-8%) rotateY(-25deg);
+                inset: 80px;
+            }
             height: 150%;
             transform-style: preserve-3d;
             perspective: 1000px;
@@ -164,6 +236,7 @@ p{
                 border-bottom: 0;
                 width: 100%;
                 height: 100%;
+                object-fit: contain;
                 object-fit: cover;
                 object-position: center top;
             }
@@ -175,7 +248,6 @@ p{
     &__shape::after
     {
         position: absolute;
-        bottom: 0;
         left: 0;
         right: 0;
         width: 100%;
@@ -187,11 +259,14 @@ p{
     }
 
     &__shape{
+        $space-diff: 1px;
+        bottom: -$space-diff;
         z-index: 1;
         text-align: center;
 
         &::after{
             content: '';
+            bottom: $space-diff;
             z-index: -1;
             height: 150%;
             background-image:
@@ -204,12 +279,14 @@ p{
 
         &__element{
             color: $color-white;
+            display: block;
         }
         
     }
 
 }
 
+/* Service Section */
 .service{
     position: relative;
     isolation: isolate;
@@ -242,18 +319,23 @@ p{
     }
 
 
-    @media (min-width: 992px) {
-        &__item{
+    &__item{
+        &:not(:last-child){
+            margin-bottom: 30px;
+        }
+        @media (min-width: 992px) {
             margin-top: calc(var(--index) * 50px);
         }
     }
 
     &-card{
-        padding: 40px;
+        padding: 30px 20px;
+        @media (min-width: 500px) {
+            padding: 40px;
+        }
         background-color: $color-white;
         box-shadow: 0 0 60px rgba(0, 0, 0, 0.05);
         border-radius: 25px;
-        margin-bottom: 30px;
     
         &__icon{
             display: inline-flex;
@@ -276,6 +358,76 @@ p{
     
         &__text{
             font-size: 18px;
+        }
+    }
+}
+
+/* Footer Section */
+.footer{
+    color: $color-white;
+    background-color: #0f110f;
+    
+    &__top{
+        $spacing: 80px;
+        padding-top: $spacing;
+        padding-bottom: $spacing;
+    }
+
+    &__bottom{
+        $spacing: 30px;
+        padding-top: $spacing;
+        padding-bottom: $spacing;
+        border-top: 1px solid rgba($color-white, $alpha: 0.1);
+    }
+
+    @media (max-width: 991.98px) {
+        &__block:not(:last-child){
+            margin-bottom: 30px;
+        }
+    }
+
+
+    &__title{
+        color: $color-white;
+        font-size: 22px;
+
+        @media (min-width: 1199.98px) {
+            font-size: 28px;
+        }
+
+        font-weight: 600;
+        margin-bottom: 0.7em;
+
+        &__link{
+            color: inherit;
+            text-decoration: none;
+            word-wrap: anywhere;
+
+            &:hover,
+            &:active,
+            &:focus-visible
+            {
+                color: $color-secondary;
+                text-decoration: underline;
+            }
+        }
+    }
+
+    &__text{
+        color: $color-white;
+        font-weight: 500;
+        margin-bottom: 0;
+
+        &__link{
+            color: $color-secondary;
+
+            &:hover,
+            &:active,
+            &:focus-visible
+            {
+                color: $color-white;
+                text-decoration: underline;
+            }
         }
     }
 }

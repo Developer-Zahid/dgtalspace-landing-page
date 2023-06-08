@@ -6,6 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dgtal Space</title>
 
+    <!-- Site Meta Data -->
+    <meta name="title" content="Dgtal Space">
+    <meta name="author" content="dgtalspace">
+    <meta name="description" content="dgtalspace website">
+    <meta name="keywords" content="Dgtalspace, dgtalspace">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="dgtalspace-landing-page.netlify.app/">
+    <meta property="og:title" content="Dgtal Space">
+    <meta property="og:description" content="Dgtal Space website">
+    <meta property="og:image" content="dgtalspace-landing-page.netlify.app/assets/images/og/og-image.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="dgtalspace-landing-page.netlify.app/">
+    <meta property="twitter:title" content="Dgtal Space">
+    <meta property="twitter:description" content="Dgtal Space website">
+    <meta property="twitter:image" content="dgtalspace-landing-page.netlify.app/assets/images/og/og-image.jpg">
+
+	<!-- Favicon Link -->
+	<link rel="icon" type="image/png" sizes="512x512" href="./assets/images/favicon/android-chrome-512x512.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="./assets/images/favicon/android-chrome-192x192.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon/favicon-16x16.png">
+	<link rel="icon" type="image/x-icon" href="./assets/images/favicon/favicon.ico">
+
+    <!-- All Style Link -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -13,18 +42,21 @@
     <link rel="stylesheet" href="./assets/plugins/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/style.min.css">
 
+    <!-- All Script Link -->
     <script src="./assets/plugins/bootstrap/js/bootstrap.min.js" defer></script>
-    <script src="./assets/js/script.js" defer></script>
 </head>
 <body>
+    <!-- Navbar Section -->
     <nav class="navbar">
         <div class="container">
             <a href="/" class="navbar__brand">
                 <img src="./assets/images/logo/logo.svg" alt="logo" class="navbar__brand__image">
             </a>
-            <a href="https://dgtalspace.com/" target="_blank" class="btn-text">Visite Main Website</a>
+            <a href="https://dgtalspace.com/" target="_blank" class="btn-text">Visit Main Website</a>
         </div>
     </nav>
+
+    <!-- Banner Section -->
     <header class="header">
         <div class="container">
             <h1 class="header__title text-center">
@@ -46,7 +78,9 @@
             </svg> 
         </div>
     </header>
-    <div class="service section-gap">
+
+    <!-- Service Section -->
+    <section class="service section-gap">
         <div class="container">
             <div class="section-header">
                 <h1 class="section-header__title">
@@ -90,14 +124,64 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <!-- Modal -->
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <div class="row justify-content-lg-between">
+                    <div class="col-lg-auto col-md-6 footer__block">
+                        <h1 class="footer__title">
+                            <a href="https://dgtalspace.com/" target="_blank" class="footer__title__link highlight-word">
+                                <span class="highlight-word__shape">
+                                    <img src="./assets/images/shapes/highlight-shape.png" alt="highlight" height="40" loading="lazy" class="highlight-word__shape__image highlight-word__shape__image--white">
+                                </span>
+                                Dgtal Space
+                            </a>
+                        </h1>
+                        <p class="footer__text">Get your business to the new heights.</p>
+                    </div>
+                    <div class="col-lg-auto col-md-6 footer__block">
+                        <h1 class="footer__title">
+                            <a href="mailto:hello@dgtalspace.com" class="footer__title__link">hello@dgtalspace.com</a>
+                        </h1>
+                        <p class="footer__text">MON–SAT 2PM–11PM</p>
+                    </div>
+                    <div class="col-lg-auto col-md-6 footer__block">
+                        <h1 class="footer__title">
+                            <a href="tel:+8801643390112" class="footer__title__link">(880) 1643390112</a>
+                        </h1>
+                        <p class="footer__text">WhatsApp or Call</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom d-flex flex-wrap align-items-center justify-content-center justify-content-md-between gap-3">
+                <p class="footer__text">Copyright ©2023 <a href="https://dgtalspace.com/" target="_blank" class="footer__text__link">Dgtal Space</a>. All rights reserved.</p>
+                <div class="nav social-nav">
+                    <a class="social-nav__link" href="https://www.facebook.com/successmindinstitute" target="_blank">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a class="social-nav__link" href="https://instagram.com/dgtalspace" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a class="social-nav__link" href="https://www.linkedin.com/in/maksudur-rahman-730291190/" target="_blank">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a class="social-nav__link" href="https://www.youtube.com/@successmindinstitute" target="_blank">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Request Quote Modal -->
     <div class="modal fade" id="requestQuoteModal" aria-labelledby="requestQuoteModalLabel" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-lg modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="requestQuoteModalLabel">Get in touch</h1>
+                    <h3 class="modal-title fw-bold" id="requestQuoteModalLabel">Get in touch</h3>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
@@ -106,25 +190,25 @@
                             <div class="col-lg-6">
                                 <div class="mb-3">
                                     <label for="fullName" class="form-label">Full Name <span class="text-danger">*</span></label>
-                                    <input id="fullName" name="fullname" type="text" class="form-control">
+                                    <input id="fullName" name="fullname" type="text" class="form-control" required>
                                 </div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="mb-3">
                                     <label for="mobileNumber" class="form-label">Mobile Number <span class="text-danger">*</span></label>
-                                    <input id="mobileNumber" name="mobile_number" type="number" class="form-control">
+                                    <input id="mobileNumber" name="mobile_number" type="number" class="form-control" required>
                                 </div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="mb-3">
                                     <label for="emailAddress" class="form-label">Email Address <span class="text-danger">*</span></label>
-                                    <input id="emailAddress" name="email" type="email" class="form-control">
+                                    <input id="emailAddress" name="email" type="email" class="form-control" required>
                                 </div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="mb-3">
                                     <label for="interestedIn" class="form-label">Interested In <span class="text-danger">*</span></label>
-                                    <select id="interestedIn" name="interested_in" class="form-control">
+                                    <select id="interestedIn" name="interested_in" class="form-select" required>
                                         <option value="" selected disabled>Select</option>
                                         <option value="Graphic Design">Graphic Design</option>
                                         <option value="Web Design">Web Design</option>
@@ -136,18 +220,17 @@
                             <div class="col-12">
                                 <div class="mb-3">
                                     <label for="briefProject" class="form-label">Brief about the project <span class="text-danger">*</span></label>
-                                    <textarea id="briefProject" name="description" class="form-control" rows="6"></textarea>
+                                    <textarea id="briefProject" name="description" class="form-control" rows="6" required></textarea>
                                 </div>
                             </div>
                         </div>
                         <div class="text-center">
-                            <button type="submit" class="btn btn-lg btn-primary">Submit</button>
+                            <button type="submit" class="btn btn-lg btn-primary">Submit <i class="fa-solid fa-paper-plane"></i></button>
                         </div>
                     </form>
                 </div>
             </div>
         </div>
     </div>
-  
 </body>
 </html>
