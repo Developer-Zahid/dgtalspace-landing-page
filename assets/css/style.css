@@ -17,8 +17,14 @@ p {
 }
 
 .section-gap {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media (min-width: 768px) {
+  .section-gap {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
 }
 
 .section-header {
@@ -316,7 +322,7 @@ p {
   right: 0;
   background-color: rgba(255, 189, 132, 0.2);
 }
-.service__item:not(:last-child) {
+.service__item {
   margin-bottom: 30px;
 }
 @media (min-width: 992px) {
@@ -368,6 +374,14 @@ p {
 }
 .service-card__text {
   font-size: 18px;
+}
+
+.subscribe-card {
+  padding: 50px 15px;
+  background-color: #ffffff;
+  border-radius: 25px;
+  -webkit-box-shadow: 0 0 60px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 0 60px rgba(0, 0, 0, 0.05);
 }
 
 /* Footer Section */

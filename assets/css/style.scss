@@ -2,9 +2,10 @@ $color-banner: #f3f3fa;
 $color-primary: #5a47c0;
 $color-secondary: #ff1f8e;
 $color-tertiary: #ffbd84;
-$color-white: #ffffff;
 $color-gray: #666666;
 $color-title: #0F110F;
+$color-white: #ffffff;
+$color-black: #000000;
 
 $font-primary: 'Montserrat', sans-serif;
 
@@ -28,8 +29,13 @@ p{
 }
 
 .section-gap{
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    
+    @media (min-width: 768px) {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
 }
 
 .section-header{
@@ -320,9 +326,7 @@ p{
 
 
     &__item{
-        &:not(:last-child){
-            margin-bottom: 30px;
-        }
+        margin-bottom: 30px;
         @media (min-width: 992px) {
             margin-top: calc(var(--index) * 50px);
         }
@@ -334,7 +338,7 @@ p{
             padding: 40px;
         }
         background-color: $color-white;
-        box-shadow: 0 0 60px rgba(0, 0, 0, 0.05);
+        box-shadow: 0 0 60px rgba($color-black, $alpha: 0.05);
         border-radius: 25px;
     
         &__icon{
@@ -360,6 +364,13 @@ p{
             font-size: 18px;
         }
     }
+}
+
+.subscribe-card{
+    padding: 50px 15px;
+    background-color: $color-white;
+    border-radius: 25px;
+    box-shadow: 0 0 60px rgba($color-black, $alpha: 0.05);
 }
 
 /* Footer Section */
